@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "UOLEdTechGamificacao": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

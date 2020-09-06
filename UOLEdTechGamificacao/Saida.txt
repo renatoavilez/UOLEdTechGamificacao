@@ -1,0 +1,27 @@
+Ordenação de acordo com o Nome
+
+nome1 | 29 anos | Pontuação: 100000 | Posição Ranking: 0
+nome1 | 0 anos | Pontuação: 654123 | Posição Ranking: 0
+nome2 | 24 anos | Pontuação: 1119999 | Posição Ranking: 0
+nome3 | 24 anos | Pontuação: 5200 | Posição Ranking: 0
+nome5 | 0 anos | Pontuação: 1666 | Posição Ranking: 0
+nome6 | 0 anos | Pontuação: 11 | Posição Ranking: 0
+nome7 | 120 anos | Pontuação: 223132130 | Posição Ranking: 0
+
+Ordenação de acordo com o Ranking
+
+nome1 | 29 anos | Ouro:10 | Prata: 0 | Bronze: 0 | Pontuação: 100000 | Posição Ranking: 0
+nome3 | 24 anos | Ouro:0 | Prata: 5 | Bronze: 2 | Pontuação: 5200 | Posição Ranking: 0
+nome2 | 24 anos | Ouro:111 | Prata: 9 | Bronze: 9 | Pontuação: 1119999 | Posição Ranking: 0
+nome1 | 0 anos | Ouro:65 | Prata: 4 | Bronze: 1 | Pontuação: 654123 | Posição Ranking: 0
+nome5 | 0 anos | Ouro:0 | Prata: 1 | Bronze: 6 | Pontuação: 1666 | Posição Ranking: 0
+nome7 | 120 anos | Ouro:22313 | Prata: 2 | Bronze: 1 | Pontuação: 223132130 | Posição Ranking: 0
+nome6 | 0 anos | Ouro:0 | Prata: 0 | Bronze: 0 | Pontuação: 11 | Posição Ranking: 0
+
+Ordenação de acordo com o Região e agrupamento pela quantidade de medalhas
+
+BH | Ouro: 75 | Prata: 9 | Bronze: 3
+GO | Ouro: 0 | Prata: 1 | Bronze: 6
+MG | Ouro: 22313 | Prata: 2 | Bronze: 1
+RJ | Ouro: 111 | Prata: 9 | Bronze: 9
+
