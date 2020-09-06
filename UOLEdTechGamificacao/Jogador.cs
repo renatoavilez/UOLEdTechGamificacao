@@ -1,5 +1,4 @@
 ﻿using System;
-using UOLEdTechGamificacao.Enum;
 
 namespace UOLEdTechGamificacao
 {
@@ -10,7 +9,6 @@ namespace UOLEdTechGamificacao
         public int MedalhaBronze { get; set; }
         public int MedalhaPrata { get; set; }
         public int MedalhaOuro { get; set; }
-        public Nivelamento Nivel { get; set; }
         public int PosicaoRanking { get; set; }
         public string Regiao { get; set; }
         public DateTime Nascimento { get; set; }

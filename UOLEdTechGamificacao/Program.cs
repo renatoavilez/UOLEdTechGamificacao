@@ -18,8 +18,6 @@ namespace UOLEdTechGamificacao
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
 
-            //VALIDAR niveis
-
             try
             {
                 CreateHostBuilder(args).Build().Run();
