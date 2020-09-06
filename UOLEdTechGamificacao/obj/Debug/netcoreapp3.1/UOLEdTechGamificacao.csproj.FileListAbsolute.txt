@@ -33,3 +33,4 @@ D:\Estudo\UOLEdTechGamificacao\UOLEdTechGamificacao\obj\Debug\netcoreapp3.1\UOLE
 D:\Estudo\UOLEdTechGamificacao\UOLEdTechGamificacao\obj\Debug\netcoreapp3.1\UOLEdTechGamificacao.dll
 D:\Estudo\UOLEdTechGamificacao\UOLEdTechGamificacao\obj\Debug\netcoreapp3.1\UOLEdTechGamificacao.pdb
 D:\Estudo\UOLEdTechGamificacao\UOLEdTechGamificacao\obj\Debug\netcoreapp3.1\UOLEdTechGamificacao.csprojAssemblyReference.cache
+D:\Estudo\UOLEdTechGamificacao\UOLEdTechGamificacao\bin\Debug\netcoreapp3.1\bora.json
