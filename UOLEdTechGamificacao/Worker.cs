@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using UOLEdTechGamificacao.Enum;
+using UOLEdTechGamificacao.Excecoes;
 
 namespace UOLEdTechGamificacao
 {
@@ -28,6 +28,8 @@ namespace UOLEdTechGamificacao
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            ValidarServiceConfiguration(serviceConfigurations);
+
             var delay = new TimeSpan(serviceConfigurations.HorasEntreExecucao, 0, 0);
 
             while (!stoppingToken.IsCancellationRequested)
@@ -37,6 +39,14 @@ namespace UOLEdTechGamificacao
                 Log.Information("Worker running at: {time}", DateTimeOffset.Now);
 
                 await Task.Delay(delay, stoppingToken);
+            }
+        }
+
+        private void ValidarServiceConfiguration(ServiceConfigurations serviceConfigurations)
+        {
+            if(serviceConfigurations.Niveis.Sum() != 100)
+            {
+                throw new InvalidLevelSettingException();
             }
         }
 
@@ -94,8 +104,7 @@ namespace UOLEdTechGamificacao
                                 Nascimento = DateTime.ParseExact(atributos[2], "dd/MM/yyyy", null),
                                 Regiao = atributos[3],
                                 Pontuacao = int.Parse(atributos[4]),
-                                UltimaPontuacao = DateTime.ParseExact(atributos[5], "dd/MM/yyyy", null),
-                                Nivel = Nivelamento.A
+                                UltimaPontuacao = DateTime.ParseExact(atributos[5], "dd/MM/yyyy", null)
                             };
 
                             jogadores.Add(jogador);
@@ -164,8 +173,15 @@ namespace UOLEdTechGamificacao
 
         private void AtualizarRanking(List<Jogador> jogadores)
         {
-            var jogadoresEletivoOrdenados = jogadores.Where(jogador => jogador.Pontuacao > 10000).OrderBy(jogador => jogador.Pontuacao);
+            var jogadoresEletivoOrdenados = jogadores.Where(jogador => jogador.Pontuacao > 10000).OrderByDescending(jogador => jogador.Pontuacao).ThenByDescending(jogador => jogador.UltimaPontuacao).ToList();
 
+            var posicao = 1;
+
+            foreach (var jogador in jogadoresEletivoOrdenados)
+            {
+                jogador.PosicaoRanking = posicao;
+                posicao++;
+            }
         }
 
         private List<Jogador> OrdernarPorNome(List<Jogador> jogadores)
@@ -181,9 +197,11 @@ namespace UOLEdTechGamificacao
 
             foreach (var jogador in jogadores)
             {
-                textoFormatado.AppendLine(string.Format("{0} | {1} anos | Pontuação: {2} | Posição Ranking: {3}", jogador.Nome, jogador.Idade, jogador.Pontuacao, jogador.PosicaoRanking));
+                if (jogador.Pontuacao >= 10000)
+                {
+                    textoFormatado.AppendLine(string.Format("{0} | {1} anos | Pontuação: {2} | Posição Ranking: {3}", jogador.Nome, jogador.Idade, jogador.Pontuacao, jogador.PosicaoRanking));
+                }
             }
-
             return textoFormatado.ToString();
         }
 
@@ -200,7 +218,10 @@ namespace UOLEdTechGamificacao
 
             foreach (var jogador in jogadores)
             {
-                textoFormatado.AppendLine(string.Format("{0} | {1} anos | Ouro:{2} | Prata: {3} | Bronze: {4} | Pontuação: {5} | Posição Ranking: {6}", jogador.Nome, jogador.Idade, jogador.MedalhaOuro, jogador.MedalhaPrata, jogador.MedalhaBronze, jogador.Pontuacao, jogador.PosicaoRanking));
+                if (jogador.Pontuacao >= 10000)
+                {
+                    textoFormatado.AppendLine(string.Format("{0} | {1} anos | Ouro:{2} | Prata: {3} | Bronze: {4} | Pontuação: {5} | Posição Ranking: {6}", jogador.Nome, jogador.Idade, jogador.MedalhaOuro, jogador.MedalhaPrata, jogador.MedalhaBronze, jogador.Pontuacao, jogador.PosicaoRanking));
+                }
             }
 
             return textoFormatado.ToString();
