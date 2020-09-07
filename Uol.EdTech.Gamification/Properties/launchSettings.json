@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Uol.EdTech.Gamification": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
