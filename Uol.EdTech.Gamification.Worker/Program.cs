@@ -40,6 +40,7 @@ namespace Uol.EdTech.Gamification.WorkerExecutor
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
             return Host.CreateDefaultBuilder(args)
+                .UseWindowsService()               
                 .ConfigureServices((hostContext, services) =>
                 {
                     var applicationConfig = new ApplicationConfig();
