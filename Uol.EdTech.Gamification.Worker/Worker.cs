@@ -82,6 +82,8 @@ namespace Uol.EdTech.Gamification.WorkerExecutor
 
             textoFormatado.Append(FormatarPorRegiao(pontuacaoPorRegiao));
 
+            Log.Information(textoFormatado.ToString());
+
             await escritorArquivo.ExecutarAsync(textoFormatado.ToString());
         }
 
@@ -94,8 +96,6 @@ namespace Uol.EdTech.Gamification.WorkerExecutor
                 var idade = dataAtual.Year - jogador.Nascimento.Year;
 
                 jogador.Idade = jogador.Nascimento.Date > jogador.Nascimento.AddYears(-idade) ? idade-- : idade;
-
-                Log.Error("JOGADOR: {jogador} IDADE {idade}", jogador.Nome, jogador.Idade);
             }
         }
 
