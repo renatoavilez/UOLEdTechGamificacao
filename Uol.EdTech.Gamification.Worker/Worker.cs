@@ -12,7 +12,7 @@ using UOL.EdTech.Gamification.Core.Dtos;
 using UOL.EdTech.Gamification.Core.Entidades;
 using UOL.EdTech.Gamification.Core.Interfaces;
 
-namespace Uol.EdTech.Gamification.Worker
+namespace Uol.EdTech.Gamification.WorkerExecutor
 {
     public class Worker : BackgroundService
     {

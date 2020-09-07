@@ -7,7 +7,7 @@ using Uol.EdTech.Gamification.Util;
 using UOL.EdTech.Gamification.Core.Interfaces;
 using UOL.EdTech.Gamification.Core.Servicos;
 
-namespace Uol.EdTech.Gamification.Worker
+namespace Uol.EdTech.Gamification.WorkerExecutor
 {
     public class Program
     {

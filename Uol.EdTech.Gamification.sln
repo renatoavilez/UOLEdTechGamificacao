@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uol.EdTech.Gamification.Worker", "Uol.EdTech.Gamification\Uol.EdTech.Gamification.Worker.csproj", "{ABDBE76D-870B-4669-997E-A8DC212E8686}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOL.EdTech.Gamification.Core", "UOL.EdTech.Gamification.Core\UOL.EdTech.Gamification.Core.csproj", "{5718CA8B-978A-4619-8D1B-90CBF6CC2A21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uol.EdTech.Gamification.Util", "Uol.EdTech.Gamification.Util\Uol.EdTech.Gamification.Util.csproj", "{24483452-5697-4121-90D3-A1A5DA72EB14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uol.EdTech.Gamification.Testes", "Uol.EdTech.Gamification.Testes\Uol.EdTech.Gamification.Testes.csproj", "{9E9F8E18-7F7D-49D0-B728-E4DAEDB650B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24483452-5697-4121-90D3-A1A5DA72EB14} = {24483452-5697-4121-90D3-A1A5DA72EB14}
+		{5718CA8B-978A-4619-8D1B-90CBF6CC2A21} = {5718CA8B-978A-4619-8D1B-90CBF6CC2A21}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uol.EdTech.Gamification.WorkerExecutor", "Uol.EdTech.Gamification.Worker\Uol.EdTech.Gamification.WorkerExecutor.csproj", "{EC042328-83A6-4640-94C9-F928E7A7A7D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ABDBE76D-870B-4669-997E-A8DC212E8686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ABDBE76D-870B-4669-997E-A8DC212E8686}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ABDBE76D-870B-4669-997E-A8DC212E8686}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABDBE76D-870B-4669-997E-A8DC212E8686}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5718CA8B-978A-4619-8D1B-90CBF6CC2A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5718CA8B-978A-4619-8D1B-90CBF6CC2A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5718CA8B-978A-4619-8D1B-90CBF6CC2A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +29,14 @@ Global
 		{24483452-5697-4121-90D3-A1A5DA72EB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24483452-5697-4121-90D3-A1A5DA72EB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24483452-5697-4121-90D3-A1A5DA72EB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E9F8E18-7F7D-49D0-B728-E4DAEDB650B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9F8E18-7F7D-49D0-B728-E4DAEDB650B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9F8E18-7F7D-49D0-B728-E4DAEDB650B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9F8E18-7F7D-49D0-B728-E4DAEDB650B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC042328-83A6-4640-94C9-F928E7A7A7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC042328-83A6-4640-94C9-F928E7A7A7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC042328-83A6-4640-94C9-F928E7A7A7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC042328-83A6-4640-94C9-F928E7A7A7D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

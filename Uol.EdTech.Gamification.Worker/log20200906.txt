@@ -1,0 +1,32 @@
+06/09/2020 22:18:05 | Message: Serviço iniciado: 09/07/2020 01:18:05 +00:00 Exception:  
+06/09/2020 22:18:08 | Message: JOGADOR: "nome1" IDADE 29 Exception:  
+06/09/2020 22:18:08 | Message: JOGADOR: "nome3" IDADE 24 Exception:  
+06/09/2020 22:18:08 | Message: JOGADOR: "nome2" IDADE 24 Exception:  
+06/09/2020 22:18:08 | Message: JOGADOR: "nome1" IDADE 0 Exception:  
+06/09/2020 22:18:08 | Message: JOGADOR: "nome5" IDADE 0 Exception:  
+06/09/2020 22:18:08 | Message: JOGADOR: "nome7" IDADE 120 Exception:  
+06/09/2020 22:18:08 | Message: JOGADOR: "nome6" IDADE 0 Exception:  
+06/09/2020 22:32:25 | Message: Serviço iniciado: 09/07/2020 01:32:25 +00:00 Exception:  
+06/09/2020 22:32:26 | Message: JOGADOR: "nome1" IDADE 29 Exception:  
+06/09/2020 22:32:26 | Message: JOGADOR: "nome3" IDADE 24 Exception:  
+06/09/2020 22:32:26 | Message: JOGADOR: "nome2" IDADE 24 Exception:  
+06/09/2020 22:32:26 | Message: JOGADOR: "nome1" IDADE 0 Exception:  
+06/09/2020 22:32:26 | Message: JOGADOR: "nome5" IDADE 0 Exception:  
+06/09/2020 22:32:26 | Message: JOGADOR: "nome7" IDADE 120 Exception:  
+06/09/2020 22:32:26 | Message: JOGADOR: "nome6" IDADE 0 Exception:  
+06/09/2020 22:41:23 | Message: Serviço iniciado: 09/07/2020 01:41:23 +00:00 Exception:  
+06/09/2020 22:41:25 | Message: JOGADOR: "nome1" IDADE 29 Exception:  
+06/09/2020 22:41:25 | Message: JOGADOR: "nome3" IDADE 24 Exception:  
+06/09/2020 22:41:25 | Message: JOGADOR: "nome2" IDADE 24 Exception:  
+06/09/2020 22:41:25 | Message: JOGADOR: "nome1" IDADE 0 Exception:  
+06/09/2020 22:41:25 | Message: JOGADOR: "nome5" IDADE 0 Exception:  
+06/09/2020 22:41:25 | Message: JOGADOR: "nome7" IDADE 120 Exception:  
+06/09/2020 22:41:25 | Message: JOGADOR: "nome6" IDADE 0 Exception:  
+06/09/2020 22:55:07 | Message: Serviço iniciado: 09/07/2020 01:55:07 +00:00 Exception:  
+06/09/2020 22:55:08 | Message: JOGADOR: "nome1" IDADE 29 Exception:  
+06/09/2020 22:55:08 | Message: JOGADOR: "nome3" IDADE 24 Exception:  
+06/09/2020 22:55:08 | Message: JOGADOR: "nome2" IDADE 24 Exception:  
+06/09/2020 22:55:08 | Message: JOGADOR: "nome1" IDADE 0 Exception:  
+06/09/2020 22:55:08 | Message: JOGADOR: "nome5" IDADE 0 Exception:  
+06/09/2020 22:55:08 | Message: JOGADOR: "nome7" IDADE 120 Exception:  
+06/09/2020 22:55:08 | Message: JOGADOR: "nome6" IDADE 0 Exception:  
