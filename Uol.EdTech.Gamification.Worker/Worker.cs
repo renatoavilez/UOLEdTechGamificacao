@@ -3,6 +3,7 @@ using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,6 +12,8 @@ using Uol.EdTech.Gamification.Util.Excecoes;
 using UOL.EdTech.Gamification.Core.Dtos;
 using UOL.EdTech.Gamification.Core.Entidades;
 using UOL.EdTech.Gamification.Core.Interfaces;
+
+[assembly: InternalsVisibleTo("Uol.EdTech.Gamification.Testes")]
 
 namespace Uol.EdTech.Gamification.WorkerExecutor
 {
@@ -39,13 +42,13 @@ namespace Uol.EdTech.Gamification.WorkerExecutor
             {
                 await ExecutarAsync();
 
-                Log.Information("Worker running at: {time}", DateTimeOffset.Now);
+                Log.Information("Execucao: {time}", DateTimeOffset.UtcNow);
 
                 await Task.Delay(delay, stoppingToken);
             }
         }
 
-        private void ValidarServiceConfiguration(ApplicationConfig applicationConfig)
+        internal void ValidarServiceConfiguration(ApplicationConfig applicationConfig)
         {
             if (applicationConfig.Niveis.Sum() != 100)
             {
@@ -53,7 +56,7 @@ namespace Uol.EdTech.Gamification.WorkerExecutor
             }
         }
 
-        private async Task ExecutarAsync()
+        internal async Task ExecutarAsync()
         {
             var jogadores = await leitorArquivo.ExecutarAsync();
 
