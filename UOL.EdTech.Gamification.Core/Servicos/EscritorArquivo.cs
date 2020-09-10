@@ -16,7 +16,7 @@ namespace UOL.EdTech.Gamification.Core.Servicos
 
         public async Task ExecutarAsync(string texto)
         {
-            using (StreamWriter streamWriter = new StreamWriter(Path.Combine(applicationConfig.ArquivoResultado)))
+            using (StreamWriter streamWriter = new StreamWriter(Path.Combine(applicationConfig.ArquivoEscrita)))
             {
                 await streamWriter.WriteLineAsync(texto);
             }
