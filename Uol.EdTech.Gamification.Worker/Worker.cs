@@ -9,9 +9,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Uol.EdTech.Gamification.Util;
 using Uol.EdTech.Gamification.Util.Excecoes;
-using UOL.EdTech.Gamification.Core.Dtos;
-using UOL.EdTech.Gamification.Core.Entidades;
-using UOL.EdTech.Gamification.Core.Interfaces;
+using Uol.EdTech.Gamification.Core.Dtos;
+using Uol.EdTech.Gamification.Core.Entidades;
+using Uol.EdTech.Gamification.Core.Interfaces;
 
 [assembly: InternalsVisibleTo("Uol.EdTech.Gamification.Testes")]
 

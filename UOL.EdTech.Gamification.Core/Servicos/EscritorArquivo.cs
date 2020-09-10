@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 using Uol.EdTech.Gamification.Util;
-using UOL.EdTech.Gamification.Core.Interfaces;
+using Uol.EdTech.Gamification.Core.Interfaces;
 
-namespace UOL.EdTech.Gamification.Core.Servicos
+namespace Uol.EdTech.Gamification.Core.Servicos
 {
     public class EscritorArquivo : IEscritorArquivo
     {

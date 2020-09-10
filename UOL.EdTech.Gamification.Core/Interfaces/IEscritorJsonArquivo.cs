@@ -1,4 +1,4 @@
-﻿namespace UOL.EdTech.Gamification.Core.Interfaces
+﻿namespace Uol.EdTech.Gamification.Core.Interfaces
 {
     public interface IEscritorJsonArquivo
     {

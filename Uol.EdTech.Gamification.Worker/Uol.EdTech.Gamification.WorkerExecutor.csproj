@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UOL.EdTech.Gamification.Core\UOL.EdTech.Gamification.Core.csproj" />
+    <ProjectReference Include="..\UOL.EdTech.Gamification.Core\Uol.EdTech.Gamification.Core.csproj" />
     <ProjectReference Include="..\Uol.EdTech.Gamification.Util\Uol.EdTech.Gamification.Util.csproj" />
   </ItemGroup>
 

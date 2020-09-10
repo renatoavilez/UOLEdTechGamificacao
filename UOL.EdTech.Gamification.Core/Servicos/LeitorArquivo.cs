@@ -6,10 +6,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Uol.EdTech.Gamification.Util;
 using Uol.EdTech.Gamification.Util.Excecoes;
-using UOL.EdTech.Gamification.Core.Entidades;
-using UOL.EdTech.Gamification.Core.Interfaces;
+using Uol.EdTech.Gamification.Core.Entidades;
+using Uol.EdTech.Gamification.Core.Interfaces;
 
-namespace UOL.EdTech.Gamification.Core.Servicos
+namespace Uol.EdTech.Gamification.Core.Servicos
 {
     public class LeitorArquivo : ILeitorArquivo
     {

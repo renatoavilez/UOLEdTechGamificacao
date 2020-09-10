@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using Uol.EdTech.Gamification.Util;
 using Uol.EdTech.Gamification.Util.Excecoes;
 using Uol.EdTech.Gamification.WorkerExecutor;
-using UOL.EdTech.Gamification.Core.Entidades;
-using UOL.EdTech.Gamification.Core.Interfaces;
+using Uol.EdTech.Gamification.Core.Entidades;
+using Uol.EdTech.Gamification.Core.Interfaces;
 
 namespace Uol.EdTech.Gamification.Testes
 {

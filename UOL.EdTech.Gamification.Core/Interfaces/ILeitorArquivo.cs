@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using UOL.EdTech.Gamification.Core.Entidades;
+using Uol.EdTech.Gamification.Core.Entidades;
 
-namespace UOL.EdTech.Gamification.Core.Interfaces
+namespace Uol.EdTech.Gamification.Core.Interfaces
 {
     public interface ILeitorArquivo
     {

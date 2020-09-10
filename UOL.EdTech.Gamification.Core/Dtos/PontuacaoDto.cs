@@ -1,4 +1,4 @@
-﻿namespace UOL.EdTech.Gamification.Core.Dtos
+﻿namespace Uol.EdTech.Gamification.Core.Dtos
 {
     public class PontuacaoDto
     {

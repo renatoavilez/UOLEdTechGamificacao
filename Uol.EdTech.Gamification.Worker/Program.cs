@@ -4,8 +4,8 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using System;
 using Uol.EdTech.Gamification.Util;
-using UOL.EdTech.Gamification.Core.Interfaces;
-using UOL.EdTech.Gamification.Core.Servicos;
+using Uol.EdTech.Gamification.Core.Interfaces;
+using Uol.EdTech.Gamification.Core.Servicos;
 
 namespace Uol.EdTech.Gamification.WorkerExecutor
 {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOL.EdTech.Gamification.Core", "UOL.EdTech.Gamification.Core\UOL.EdTech.Gamification.Core.csproj", "{5718CA8B-978A-4619-8D1B-90CBF6CC2A21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uol.EdTech.Gamification.Core", "UOL.EdTech.Gamification.Core\Uol.EdTech.Gamification.Core.csproj", "{5718CA8B-978A-4619-8D1B-90CBF6CC2A21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uol.EdTech.Gamification.Util", "Uol.EdTech.Gamification.Util\Uol.EdTech.Gamification.Util.csproj", "{24483452-5697-4121-90D3-A1A5DA72EB14}"
 EndProject

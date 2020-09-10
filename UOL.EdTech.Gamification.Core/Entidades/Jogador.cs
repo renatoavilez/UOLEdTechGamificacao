@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UOL.EdTech.Gamification.Core.Entidades
+namespace Uol.EdTech.Gamification.Core.Entidades
 {
     public class Jogador
     {
