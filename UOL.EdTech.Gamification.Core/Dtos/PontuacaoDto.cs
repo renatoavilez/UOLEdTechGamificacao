@@ -5,6 +5,6 @@
         public string Regiao { get; set; }
         public int MedalhaOuro { get; set; }
         public int MedalhaPrata { get; set; }
-        public int MedalhaBronze { get; set; } 
+        public int MedalhaBronze { get; set; }
     }
 }
