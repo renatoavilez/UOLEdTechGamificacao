@@ -58,7 +58,7 @@ namespace Uol.EdTech.Gamification.Testes
             {
                 ArquivoJson = "ArquivoJson",
                 ArquivoLeitura = "ArquivoLeitura",
-                ArquivoResultado = "ArquivoResultado",
+                ArquivoEscrita = "ArquivoResultado",
                 HorasEntreExecucao = 2,
                 Niveis = new List<int> { 4, 3, 2, 1 }
             };
