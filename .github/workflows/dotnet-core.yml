@@ -12,18 +12,17 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
-    with:
+      - uses: actions/checkout@v2
+        with:
           fetch-depth: 0
-              
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1.6.0
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1.6.0
       
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.2
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.2
      
-    - name: Install dependencies
-      run: nuget restore
+      - name: Install dependencies
+        run: nuget restore
       
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
@@ -47,19 +46,17 @@ jobs:
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
 
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
 
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
 
-    - name: Analyze
-      run:
-      env:
+      - name: Analyze
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
-        run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"renatoavilez_UOLEdTechGamificacao" /o:"renatovilarinho" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          run:| .\.sonar\scanner\dotnet-sonarscanner begin /k:"renatoavilez_UOLEdTechGamificacao" /o:"renatovilarinho" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
 
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
